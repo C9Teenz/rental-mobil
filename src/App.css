@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Roboto', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brand-text{
+  font-size: 12px;
+  color: #8C8C8C;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mobil-text{
+  font-weight: 400;
+  font-size: 16px;
+}
+.price-text-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: end;
+ 
+}
+.price-text {
+
+  font-weight: 500;
+  font-size: 24px;
+}
+.day-text{
+  font-weight: 400;
+  font-size: 14px;
+  color: #8C8C8C;
+}
+
+.btn-sewa{
+  background-color: #515151 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: white !important;
+  margin-bottom: 16px!important;
+}
+.available-text{
+ 
+  border-radius: 24px;
+  background-color: #73D13D;
+
   color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 16px 4px 16px;
+}
+.unavailable-text{
+
+  border-radius: 24px;
+  background-color: #F0F0F0;
+  color: #8C8C8C;
+  font-size: 14px;
+  font-weight: 400;
+ 
+  padding: 4px 16px 4px 16px;
+
+}
+.posisi-text{
+  position: absolute !important;
+  top: 0px !important;
+  right: 0px !important;
+  margin-top: 16px !important;
+  margin-right: 16px !important;
+}
+.header{
+  padding: 20px 0px;
+  background-color: #515151;
+  text-align: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.content-header{
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-header{
+  width: 24px;
+  height: auto;
+  margin-right: 16px;
+  vertical-align: unset;
+}
+.item-mobil{
+  padding: 50px 95px 0px 95px;
+}
+.list-text{
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 26px;
+  
+}
+.content-back{
+  margin-top: 33px;
+  margin-bottom: 16px;
+  color: #595959;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+.logo-back{
+  width: 20px;
+  height: auto;
+}
+.header-detail-text{
+  color: #8C8C8C;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+.detail-row{
+  padding: 0px 24px 0px 24px;
+}
+.detail-sewa{
+margin-top: -10px !important;
+margin-bottom: 8px !important;
+background-color: #515151 !important;
+}
+
+.deskripsi-text{
+  margin: 20px 0px 0px 24px;
+  color: #434343;
+  font-size: 20px;
+  font-weight: 500;
+}
+.detail-text{
+  color: #8C8C8C;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.isi-text{
+  color: #434343;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn-wrapper{
+  padding:0 !important;
+}
+.btn-user{
+  
+    width: 100% !important;
+   border-radius: 0 !important;
+}
+
+#create:checked{
+  border-color: aqua !important;
+  color: blue;
+}
+#current:checked{
+  border-color: aqua !important;
+  color: blue;
+}
+.nav-bg{
+  background-color: #515151;
+
+}
+.nav-text{
+  color: white !important;
+}
+.btn-add{
+  background-color: #515151 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+
+  color: white !important;
+  margin-bottom: 16px!important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  border-color: #515151 !important;
+}
+.btn-action{
+  padding: 0px !important;
+  margin: 0 !important;
+}
+
+.img-nav{
+  padding-left: 30px !important;
+}
+
+.login{
+  margin-top: 30px;
+  width: 360px;
+  position: absolute;
+  padding: 20px;
+  border-radius: 12px;
+  background: #8C8C8C;
+  left: 50%;
+  top:50% ;
+  transform: translate(-50%, -50%);
 }
