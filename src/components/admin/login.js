@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
+import { login } from "../../services/login";
 const Login = () => {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
-  const [to, setTo] = useState("");
-  const name = "admin";
-  const pass = "admin";
+  const navigate = useNavigate();
 
-  const submitHandler = () => {
-    if (username === name && password === pass) {
-      setTo("/dasboard");
+  const submitHandler = async () => {
+    let tempObj = { username, password };
+    const res = await login(tempObj);
+    if (res.status) {
+      navigate("/dasboard");
     } else {
-      setTo("/admin");
+      alert("username atau password salah");
     }
   };
   return (
@@ -57,7 +57,6 @@ const Login = () => {
         <Link
           className="btn btn-success w-100"
           type="submit"
-          to={to}
           onClick={() => submitHandler()}
         >
           Signin

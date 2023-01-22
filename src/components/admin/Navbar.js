@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../logo/logo.png";
+import { logout } from "../../services/login";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleButton = () => {
+    logout();
+    navigate("/admin");
+  };
   return (
     <nav className="navbar navbar-expand-lg nav-bg">
       <Link className="navbar-brand nav-text img-nav" to="/dasboard">
@@ -41,6 +48,15 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+      </div>
+      <div class="" style={{ float: "right", paddingRight: "24px" }}>
+        <button
+          class="btn btn-outline-danger"
+          type="submit"
+          onClick={() => handleButton()}
+        >
+          Log Out
+        </button>
       </div>
     </nav>
   );
